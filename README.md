@@ -16,14 +16,18 @@ Heavily optimized C++ library implementing long arithmetic.
 - Overloaded assignment operators derived from binary operators.
 
 ### Multiplication
-Multiplication has a complexity of <img src="https://bit.ly/2SPfBnK" align="center" border="0" alt="\mathcal{O}(n\cdot m)" width="98" height="29" />,
-where _n_ and _m_ are lengths of multiplicands using naive algorithm.
+Multiplication has a complexity of <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n \cdot m)" alt="O(n*m)">,
+where <img src="https://render.githubusercontent.com/render/math?math=n" alt="n"> 
+and <img src="https://render.githubusercontent.com/render/math?math=m" alt="m"> 
+are lengths of multiplicands using naive algorithm.
 
 _Possible improvement: use FFT (Fast Fourier Transform) to speed up multiplication._
 
 ### Division
-Division also has a complexity of <img src="https://bit.ly/2SPfBnK" align="center" border="0" alt="\mathcal{O}(n\cdot m)" width="98" height="29" />, 
-where _n_ and _m_ are lengths of divident and divisor, respectively. Algorithm used in
+Division also has a complexity of <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n \cdot m)" alt="O(n*m)">, 
+where <img src="https://render.githubusercontent.com/render/math?math=n" alt="n"> 
+and <img src="https://render.githubusercontent.com/render/math?math=m" alt="m"> 
+are lengths of divident and divisor, respectively. Algorithm used in
 division is [this one](http://surface.syr.edu/cgi/viewcontent.cgi?article=1162&context=eecs_techreports).
 
 ### Other optimizations
