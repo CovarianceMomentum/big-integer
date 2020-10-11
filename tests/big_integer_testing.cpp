@@ -7,7 +7,7 @@
 #include <gtest/gtest.h>
 
 #include "big_integer.h"
-#include "big_integer_gmp.h"
+#include "tests/big_integer_gmp.h"
 
 TEST(correctness, two_plus_two) {
   EXPECT_EQ(big_integer(4), big_integer(2) + big_integer(2));
