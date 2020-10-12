@@ -34,8 +34,13 @@ division is [this one](http://surface.syr.edu/cgi/viewcontent.cgi?article=1162&c
 #### Small Object (also known as Small String)
 Important optimization that stores `big_integer` instances with small values
 differently and more memory efficient. You can learn more about this optimization
-from [this](https://blogs.msmvps.com/gdicanio/2016/11/17/the-small-string-optimization/) *CppCon* speach.
+from [this](https://blogs.msmvps.com/gdicanio/2016/11/17/the-small-string-optimization/) *CppCon* speech.
 
 #### Copy-on-write 
 Optimization that optimizes memory usage of `big_integer` instances that are copied from each other
-withou being modified. You can learn more about this optimization from [this](https://en.wikipedia.org/wiki/Copy-on-write) article.
+without being modified. You can learn more about this optimization from [this](https://en.wikipedia.org/wiki/Copy-on-write) article.
+
+## Testing
+
+All overloads are tested using **gtest** framework and **mpz** module of **gmp** library, 
+implementing long arithmetics without same level of optimization.
